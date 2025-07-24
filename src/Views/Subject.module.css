@@ -1,0 +1,38 @@
+.card{
+    display: flex;
+    width: 181px;
+    height: 157px;
+    padding: 10px 10px 10px 10px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    flex-shrink: 0;
+    background: linear-gradient(90deg, #FD8204 0%, #FFA64B 100%);
+    box-sizing: border-box;
+    border-radius: 10%;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.header h1 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.header button {
+    font-size: 12px;
+    padding: 4px 8px;
+}
+
+.title{
+    font-size: 150%;
+    color: #FFF;
+    font-family: Inter;
+    font-style: normal;
+}
