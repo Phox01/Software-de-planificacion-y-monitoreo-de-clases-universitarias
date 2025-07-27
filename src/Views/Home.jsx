@@ -2,7 +2,7 @@ import React from 'react'
 import Subject from './Subject'
 import styles from './CSS/Home.module.css'
 
-export default function () {
+export default function Home() {
   return (
     <div>
         <h1>Barra de Busqueda</h1>
