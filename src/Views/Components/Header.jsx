@@ -5,9 +5,9 @@ import styles from '../CSS/Header.module.css'
 export default function Header() {
   return (
     <div className={styles.header}>
-        <div className={styles.profileImg}>
-            
-        </div>
+      <Link to="/profile" className={styles.profileImg}>
+        
+      </Link>
     </div>
   )
 }
