@@ -1,0 +1,15 @@
+.Nav{
+    display: flex;
+    padding: 10px 20px;
+    align-items: center;
+    justify-content: space-between;
+    background: #FFF;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box; /* <-- Soluciona el problema */
+    z-index: 1000;
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.05);
+}
