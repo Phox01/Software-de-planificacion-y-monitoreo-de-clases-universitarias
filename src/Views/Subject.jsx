@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './Subject.module.css'
+import styles from './CSS/Subject.module.css'
 
 export default function Subject() {
   return (
