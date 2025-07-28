@@ -4,8 +4,8 @@
   height: 157px;
   padding: 10px 10px 10px 10px;
   flex-direction: column;
-  align-items: stretch;
-  gap: 10px;
+  align-items: flex-start;
+  gap: 7px;
   flex-shrink: 0;
   background: linear-gradient(90deg, #fd8204 0%, #ffa64b 100%);
   box-sizing: border-box;
@@ -61,7 +61,7 @@
   }
 
   .title {
-    font-size: 16px;
+    font-size: 20px;
   }
 
   /* Ajuste de progressBar si existe */

@@ -1,0 +1,90 @@
+.card {
+  display: flex;
+  width: 181px;
+  height: 157px;
+  padding: 15px 15px 8px 15px;
+
+  flex-direction: column;
+  align-items: stretch;
+  gap: 10px;
+  flex-shrink: 0;
+  background: linear-gradient(90deg, #fd8204 0%, #ffa64b 100%);
+  box-sizing: border-box;
+  border-radius: 10%;
+  box-shadow: 3.38px 5.07px 3.38px 0 rgba(0, 0, 0, 0.25);
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.header h1 {
+  font-size: 20px;
+  margin: 0;
+  text-align: start;
+}
+
+.header button {
+  font-size: 25px;
+  background: none;
+  border: none;
+}
+
+.title {
+  font-size: 200%;
+  color: #fff;
+  font-family: Inter;
+  font-style: normal;
+}
+
+.description {
+  color: #fff;
+  text-align: start;
+  font-family: Inter;
+  font-size: 17px;
+  font-style: normal;
+}
+.profileImg {
+  background: url(<path-to-image>);
+  text-decoration: none;
+}
+
+@media (max-width: 400px) {
+  .card {
+    width: 100%; /* quepan 2 por fila en móviles */
+    border-radius: 11.829px;
+    height: auto;
+    padding: 15px;
+    margin-bottom: 10px;
+  }
+
+  .header h1 {
+    font-size: 20px;
+  }
+
+  .header button {
+    font-size: 25px;
+  }
+
+  .title {
+    font-size: 16px;
+  }
+
+  /* Ajuste de progressBar si existe */
+  .progressBarContainer {
+    width: 100%;
+  }
+
+  .description {
+    color: #fff;
+
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+  }
+}

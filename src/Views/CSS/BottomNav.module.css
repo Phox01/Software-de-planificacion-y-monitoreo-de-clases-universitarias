@@ -1,9 +1,10 @@
 .Nav {
   display: flex;
   flex-direction: column;
-  padding: 10px 20px;
+  padding: 25px 20px;
   align-items: center;
-  justify-content: space-between;
+  justify-content: start;
+  gap: 10%;
   background: #fff;
   position: fixed;
   left: 0;
@@ -19,6 +20,7 @@
 @media (max-width: 400px) {
   .Nav {
     flex-direction: row;
+    justify-content: space-between;
     bottom: 0;
     left: 0;
     width: 100%;
