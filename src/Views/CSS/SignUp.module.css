@@ -1,0 +1,109 @@
+.card{
+    display: flex;
+    width: 327px;
+    padding: 24px;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0 10px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.title{
+    color: var(--White, #EEE);
+    text-align: center;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 38.4px */
+    letter-spacing: -0.64px;
+}
+
+.subtitle{
+    color: var(--White, #EEE);
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 16.8px */
+    letter-spacing: -0.12px;
+}
+
+.input{
+    display: flex;
+    height: 10%;
+    padding: 15px 14px;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+
+    border-radius: 10px;
+    border: 1px solid var(--Stroke, #EDF1F3);
+    background: var(--Primary-0, #FFF);
+    box-shadow: 0 1px 2px 0 rgba(228, 229, 231, 0.24);
+
+    overflow: hidden;
+    color: var(--Secondary-500, #1A1C1E);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    /* Body Small/Medium */
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 19.6px */
+    letter-spacing: -0.14px;
+}
+
+:global(#root) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Fondo dividido 50% naranja y 50% blanco */
+    background: linear-gradient(to bottom, #FD8204 50%, #FFF 50%);
+    min-height: 100vh;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.mainButton{
+    display: flex;
+    height: 48px;
+    padding: 10px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+
+    border-radius: 10px;
+    border: 1px solid #FFF;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.00) 100%), #FF8200;
+    box-shadow: 0 1px 2px 0 rgba(37, 62, 167, 0.48), 0 0 0 1px #375DFB;
+}
+
+
+@media (max-width: 400px) {
+    .title {
+        font-size: 24px;
+    }
+    .subtitle {
+        font-size: 12px;
+        text-align: center;
+    }
+    .card {
+        width: 90%;
+        padding: 16px;
+        gap: 16px;
+    }
+    .input {
+        height: 5%;
+        font-size: 13px;
+    }
+    .card button:last-of-type {
+        font-size: 14px;
+        height: 40px;
+    }
+}
