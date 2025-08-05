@@ -1,7 +1,7 @@
 .card{
     display: flex;
-    width: 327px;
-    padding: 24px;
+    width: 90%;
+    padding: 20px;
     flex-direction: column;
     align-items: center;
     gap: 24px;
@@ -81,6 +81,12 @@
     border: 1px solid #FFF;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.00) 100%), #FF8200;
     box-shadow: 0 1px 2px 0 rgba(37, 62, 167, 0.48), 0 0 0 1px #375DFB;
+}
+
+.passwordInfo{
+    display: flex;
+    flex-direction: row;
+    align-items: space-between;
 }
 
 
