@@ -2,6 +2,7 @@ import styles from "./CSS/LogIn.module.css";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import { useForm } from "react-hook-form";
+import { insertData } from "../Model/supabase";
 
 export default function SignUp() {
   useEffect(() => {
@@ -16,6 +17,13 @@ export default function SignUp() {
 
   const onSubmit = (data) => {
     console.log(data);
+    insertData("professor", data)
+      .then((response) => {
+        console.log("User created successfully:", response);
+      })
+      .catch((error) => {
+        console.error("Error creating user:", error);
+      });
   };
 
   return (
@@ -33,29 +41,29 @@ export default function SignUp() {
 
         <form onSubmit={handleSubmit(onSubmit)}>
           <input
-            {...register("carnet", {
+            {...register("no_carnet", {
               required: "El n° de carnet es obligatorio",
             })}
             placeholder="Número de carnet"
             className={styles.input}
           />
-          {errors.carnet && <p>{errors.carnet.message}</p>}
+          {errors.no_carnet && <p>{errors.no_carnet.message}</p>}
           <input
-            {...register("nombre", {
+            {...register("name", {
               required: "El nomrbe es obligatorio",
             })}
             placeholder="Nombre"
             className={styles.input}
           />
-          {errors.nombre && <p>{errors.nombre.message}</p>}
+          {errors.name && <p>{errors.name.message}</p>}
           <input
-            {...register("apellido", {
+            {...register("lastname", {
               required: "El apellido es obligatorio",
             })}
             placeholder="Apellido"
             className={styles.input}
           />
-          {errors.apellido && <p>{errors.apellido.message}</p>}
+          {errors.lastname && <p>{errors.lastname.message}</p>}
           <input
             {...register("email", {
               required: "El email es obligatorio",
@@ -65,16 +73,17 @@ export default function SignUp() {
           />
           {errors.email && <p>{errors.email.message}</p>}
           <input
-            {...register("contraseña", {
+            {...register("password", {
               required: "La contraseña es obligatoria",
             })}
             placeholder="Contraseña"
             className={styles.input}
           />
-          {errors.contraseña && <p>{errors.contraseña.message}</p>}
+          {errors.password && <p>{errors.password.message}</p>}
           <button type="submit" className={styles.mainButton}>
             Regístrarse
           </button>
+          password
         </form>
 
         <h3 className={styles.subtitle}>
