@@ -83,7 +83,6 @@ export default function SignUp() {
           <button type="submit" className={styles.mainButton}>
             Regístrarse
           </button>
-          password
         </form>
 
         <h3 className={styles.subtitle}>

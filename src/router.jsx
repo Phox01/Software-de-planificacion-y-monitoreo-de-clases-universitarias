@@ -4,6 +4,7 @@ import Classes from "./Views/Classes.jsx";
 import Profile from "./Views/Profile.jsx";
 import LogIn from "./Views/LogIn.jsx";
 import SignUp from "./Views/SignUp.jsx";
+import CreateSubject from "./Views/createSubject.jsx";
 
 export const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ export const router = createBrowserRouter([
   },
   {
     path: "/signup",
-    element: <SignUp />,  
-  }
+    element: <SignUp />,
+  },
+  {
+    path: "/create-subject",
+    element: <CreateSubject />,
+  },
 ]);
