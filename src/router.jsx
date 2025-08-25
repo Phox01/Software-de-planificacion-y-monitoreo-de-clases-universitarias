@@ -4,7 +4,7 @@ import Classes from "./Views/Classes.jsx";
 import Profile from "./Views/Profile.jsx";
 import LogIn from "./Views/LogIn.jsx";
 import SignUp from "./Views/SignUp.jsx";
-import CreateSubject from "./Views/createSubject.jsx";
+import CreateSubject from "./Views/CreateSubject.jsx";
 
 export const router = createBrowserRouter([
   {
